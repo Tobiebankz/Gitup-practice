@@ -1,0 +1,25 @@
+const express = require('express')
+const router = express.Router()
+
+const {getHome, getAbout, getProperty, getAgent, getAgencies, getBlog, getBlogDetails, getContact, getFaq, getGallery, getService, getShop, getTerms, getShopCart, getShopCheckout, getShopDetails, getShopOrder, getPropertyDetails} = require("../controllers/generalcontroller")
+
+router.get("/", getHome)
+router.get("/about", getAbout)
+router.get("/properties", getProperty)
+router.get("/propertydetails", getPropertyDetails)
+router.get("/agent", getAgent)
+router.get("/agencies", getAgencies)
+router.get("/blog", getBlog)
+router.get("/blogdetails", getBlogDetails)
+router.get("/contact", getContact)
+router.get("/faq", getFaq)
+router.get("/gallery", getGallery)
+router.get("/services", getService)
+router.get("/shop", getShop)
+router.get("/shopdetails", getShopDetails)
+router.get("/terms", getTerms)
+router.get("/shopcart", getShopCart)
+router.get("/shopcheckout", getShopCheckout)
+router.get("/shoporder", getShopOrder)
+
+module.exports = router 
