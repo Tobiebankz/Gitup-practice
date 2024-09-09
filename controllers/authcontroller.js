@@ -7,3 +7,6 @@ const getRegister = (req, res)=>{
 }
 
 module.exports = {getLogin, getRegister}
+
+
+"Authorization complete"
